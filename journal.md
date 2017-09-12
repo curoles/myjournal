@@ -3,6 +3,36 @@
 ---
 
 
+## Documenting with Docco. Mon Sep 11 00:42:36 PDT 2017
+
+```bash
+# See http://ashkenas.com/docco/
+sudo npm install -g docco
+
+$ docco main.js
+$ firefox docs/main.html &
+```
+
+---
+
+## Run Typescript files directly with ts-node. Sun Sep 10 23:06:26 PDT 2017
+
+See [ts-node](https://github.com/TypeStrong/ts-node).
+
+Installation:
+
+```bash
+$ npm install -g ts-node
+$ npm install -g typescript
+```
+
+Use:
+```bash
+ts-node read_file.ts
+```
+
+---
+
 ## Created Github repo. Sun Sep 10 20:33:55 PDT 2017
 
 ```bash
