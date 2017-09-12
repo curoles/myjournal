@@ -3,6 +3,66 @@
 ---
 
 
+## Use Typedoc. Mon Sep 11 18:27:20 PDT 2017
+
+[Typedoc](https://github.com/TypeStrong/typedoc),
+[grunt-typedoc](https://github.com/TypeStrong/grunt-typedoc).
+
+
+```bash
+npm install grunt-typedoc --save-dev
+```
+
+---
+
+## Run Docco with Grunt. Mon Sep 11 17:39:05 PDT 2017
+
+```bash
+$ npm install grunt-docco --save-dev
+```
+
+```js
+  grunt.loadNpmTasks('grunt-docco');
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    docco: {
+      debug: {
+        src: ['src/**/*.js', 'src/**/*.ts'],
+        options: {
+          output: '../docs/docco'
+        }
+      }
+    }
+  });
+```
+
+---
+
+## Install grunt. Mon Sep 11 17:18:36 PDT 2017
+
+[Grunt getting started](https://gruntjs.com/getting-started)
+
+```bash
+$ npm install -g grunt-cli
+$ npm install grunt --save-dev
+
+$ cat Gruntfile.js 
+// This file is used to configure or define tasks and load Grunt plugins.
+
+module.exports = function(grunt) {
+    // Do grunt-related things in here
+    console.log("Running GRUNT")
+};
+
+$ grunt
+Running GRUNT
+Warning: Task "default" not found. Use --force to continue.
+```
+
+---
+
 ## Documenting with Docco. Mon Sep 11 00:42:36 PDT 2017
 
 ```bash
